@@ -40,7 +40,7 @@ export const WeddingInfoSection = () => {
             title="La Date"
             details={[
               "Dimanche",
-              "[Date à définir]",
+              "6 septembre",
               "2026",
             ]}
           />
