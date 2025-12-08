@@ -35,7 +35,7 @@ export const AccommodationSection = () => {
 
 
             <div className="text-center">
-              <Button variant="outline" className="gap-2" onClick={() => window.open("#", "_blank")}>
+              <Button variant="default" size="lg" className="gap-2" onClick={() => window.open("#", "_blank")}>
                 ​Pour réserver    
                 <ExternalLink className="w-4 h-4" />
               </Button>
