@@ -37,7 +37,7 @@ export const WeddingInfoSection = () => {
           
           <InfoCard icon={<MapPin className="w-5 h-5 text-primary" />} title="Le Lieu" details={["Auberge des Iles", "St-Gédéon"]} />
           
-          <InfoCard icon={<MapPin className="w-5 h-5 text-primary" />} title="Les Enfants" details={["Bien que nous aimons", "vos bouts de choux, nous avons choisi", "de célébrer cette soirée sans la présence de ceux-ci."]} />
+          
         </div>
 
         <EucalyptusDivider className="mt-16" />
