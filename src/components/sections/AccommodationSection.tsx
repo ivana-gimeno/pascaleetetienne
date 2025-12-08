@@ -35,7 +35,7 @@ export const AccommodationSection = () => {
 
 
             <div className="text-center">
-              <Button variant="default" size="lg" onClick={() => window.open("#", "_blank")}>
+              <Button variant="default" size="lg" onClick={() => window.open("/Mariage-de-Pascale-et-Etienne.pdf", "_blank")}>
                 Pour réserver
               </Button>
             </div>
