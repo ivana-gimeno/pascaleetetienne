@@ -27,7 +27,7 @@ export const AccommodationSection = () => {
             </h3>
 
             <div className="space-y-4 text-center text-muted-foreground mb-8">
-              <p>[Adresse de l'hôtel]</p>
+              <p>250 Rang des Îles, Saint-Gédéon, QC G0W 2P0</p>
               <p>[Ville, Province, Code postal]</p>
               <div className="flex items-center justify-center gap-2">
                 <Phone className="w-4 h-4" />
