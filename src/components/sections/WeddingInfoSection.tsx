@@ -47,7 +47,7 @@ export const WeddingInfoSection = () => {
           
           <InfoCard
             icon={<MapPin className="w-5 h-5 text-primary" />}
-            title="Le Lieu"
+            title="Les Enfants"
             details={[
               "[Nom du lieu]",
               "[Adresse]",
