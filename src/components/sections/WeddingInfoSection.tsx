@@ -46,12 +46,12 @@ export const WeddingInfoSection = () => {
           />
           
           <InfoCard
-            icon={<Clock className="w-5 h-5 text-primary" />}
-            title="L'Horaire"
+            icon={<MapPin className="w-5 h-5 text-primary" />}
+            title="Le Lieu"
             details={[
-              "Cérémonie: [heure]",
-              "Cocktail: [heure]",
-              "Réception: [heure]",
+              "[Nom du lieu]",
+              "[Adresse]",
+              "[Ville, Province]",
             ]}
           />
           
