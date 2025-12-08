@@ -39,7 +39,7 @@ export const WeddingInfoSection = () => {
             icon={<Calendar className="w-5 h-5 text-primary" />}
             title="La Date"
             details={[
-              "Samedi",
+              "Dimanche",
               "[Date à définir]",
               "2026",
             ]}
