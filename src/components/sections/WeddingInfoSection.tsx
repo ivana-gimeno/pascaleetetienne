@@ -49,7 +49,7 @@ export const WeddingInfoSection = () => {
             icon={<MapPin className="w-5 h-5 text-primary" />}
             title="Le Lieu"
             details={[
-              "[Nom du lieu]",
+              "Auberge des Iles",
               "[Adresse]",
               "[Ville, Province]",
             ]}
