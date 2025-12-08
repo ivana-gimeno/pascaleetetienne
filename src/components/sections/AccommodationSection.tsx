@@ -35,16 +35,6 @@ export const AccommodationSection = () => {
               </div>
             </div>
 
-            <div className="bg-secondary/50 rounded-sm p-6 mb-8">
-              <h4 className="font-medium text-foreground mb-3 text-center">
-                Informations de réservation
-              </h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• Mentionnez le code: <span className="font-medium text-foreground">[CODE À DÉFINIR]</span></li>
-                <li>• Tarif préférentiel: <span className="font-medium text-foreground">[Prix]/nuit</span></li>
-                <li>• Réservez avant le: <span className="font-medium text-foreground">[Date limite]</span></li>
-              </ul>
-            </div>
 
             <div className="text-center">
               <Button
