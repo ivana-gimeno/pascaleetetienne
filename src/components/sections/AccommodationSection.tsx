@@ -31,7 +31,7 @@ export const AccommodationSection = () => {
               
               <div className="flex items-center justify-center gap-2">
                 <Phone className="w-4 h-4" />
-                <p>[Numéro de téléphone]</p>
+                <p>418-549-7111</p>
               </div>
             </div>
 
