@@ -59,9 +59,9 @@ export const WeddingInfoSection = () => {
             icon={<MapPin className="w-5 h-5 text-primary" />}
             title="Les Enfants"
             details={[
-              "[Nom du lieu]",
-              "[Adresse]",
-              "[Ville, Province]",
+              "Bien que nous aimons profondément",
+              "tous vos bouts de choux, nous avons choisi",
+              "de célébrer cette soirée sans la présence de ceux-ci.",
             ]}
           />
         </div>
