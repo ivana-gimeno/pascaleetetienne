@@ -50,7 +50,7 @@ export const WeddingInfoSection = () => {
             title="Le Lieu"
             details={[
               "Auberge des Iles",
-              "[Adresse]",
+              "St-Gédéon",
               "[Ville, Province]",
             ]}
           />
