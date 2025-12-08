@@ -1,9 +1,7 @@
 import { Heart, Plane } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 export const RegistrySection = () => {
-  return (
-    <section id="liste" className="py-24 bg-background">
+  return <section id="liste" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
@@ -37,26 +35,16 @@ export const RegistrySection = () => {
                 <Heart className="w-4 h-4 inline-block mr-2 text-primary" />
                 Chaque contribution, petite ou grande, nous rapproche de notre rêve
               </p>
-              <p className="text-xs text-muted-foreground/70">
-                [Détails de contribution à ajouter]
-              </p>
+              
             </div>
 
-            <Button
-              variant="default"
-              size="lg"
-              className="bg-primary hover:bg-primary/90"
-              disabled
-            >
+            <Button variant="default" size="lg" className="bg-primary hover:bg-primary/90" disabled>
               Contribuer au voyage
             </Button>
 
-            <p className="text-xs text-muted-foreground mt-6">
-              La fonctionnalité sera bientôt disponible
-            </p>
+            
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
