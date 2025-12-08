@@ -57,11 +57,6 @@ export const AccommodationSection = () => {
               </Button>
             </div>
           </div>
-
-          <p className="text-center text-sm text-muted-foreground mt-8">
-            D'autres options d'hébergement sont disponibles dans la région. 
-            N'hésitez pas à nous contacter si vous avez besoin d'aide.
-          </p>
         </div>
       </div>
     </section>
