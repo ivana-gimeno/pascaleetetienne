@@ -33,7 +33,7 @@ export const WeddingInfoSection = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <InfoCard icon={<Calendar className="w-5 h-5 text-primary" />} title="La Date" details={["Dimanche", "6 septembre", "2026"]} />
+          <InfoCard icon={<Calendar className="w-5 h-5 text-primary" />} title="La Date" details={["Dimanche", "6 septembre 2026"]} />
           
           <InfoCard icon={<MapPin className="w-5 h-5 text-primary" />} title="Le Lieu" details={["Auberge des Iles", "St-Gédéon"]} />
           
