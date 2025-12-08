@@ -39,16 +39,26 @@ export const WeddingInfoSection = () => {
           </div>
           
           <div className="mt-8">
-            <InfoCard 
-              icon={<Clock className="w-5 h-5 text-primary" />} 
-              title="Horaire" 
-              details={[
-                "Arrivée: samedi ou dimanche",
-                "Samedi soir: souper xx",
-                "Dimanche fin de journée: cérémonie et réception",
-                "Lundi: déjeuner et départ"
-              ]} 
-            />
+            <div className="text-center p-8 bg-card rounded-sm border border-border/50 hover:shadow-md transition-shadow">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent mb-4">
+                <Clock className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="font-serif text-xl text-foreground mb-6">Horaire</h3>
+              <div className="max-w-md mx-auto space-y-4">
+                <div className="flex justify-between items-baseline gap-8">
+                  <span className="text-foreground font-medium text-left">Samedi soir</span>
+                  <span className="text-muted-foreground text-sm text-right">Souper xx</span>
+                </div>
+                <div className="flex justify-between items-baseline gap-8">
+                  <span className="text-foreground font-medium text-left">Dimanche fin de journée</span>
+                  <span className="text-muted-foreground text-sm text-right">Cérémonie et réception</span>
+                </div>
+                <div className="flex justify-between items-baseline gap-8">
+                  <span className="text-foreground font-medium text-left">Lundi</span>
+                  <span className="text-muted-foreground text-sm text-right">Déjeuner et départ</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
