@@ -60,7 +60,7 @@ export const WeddingInfoSection = () => {
             title="Les Enfants"
             details={[
               "Bien que nous aimons",
-              "tous vos bouts de choux, nous avons choisi",
+              "vos bouts de choux, nous avons choisi",
               "de célébrer cette soirée sans la présence de ceux-ci.",
             ]}
           />
