@@ -32,12 +32,24 @@ export const WeddingInfoSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <InfoCard icon={<Calendar className="w-5 h-5 text-primary" />} title="La Date" details={["Dimanche", "6 septembre 2026"]} />
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 justify-center">
+            <InfoCard icon={<Calendar className="w-5 h-5 text-primary" />} title="La Date" details={["Dimanche", "6 septembre 2026"]} />
+            <InfoCard icon={<MapPin className="w-5 h-5 text-primary" />} title="Le Lieu" details={["Auberge des Iles", "St-Gédéon"]} />
+          </div>
           
-          <InfoCard icon={<MapPin className="w-5 h-5 text-primary" />} title="Le Lieu" details={["Auberge des Iles", "St-Gédéon"]} />
-          
-          
+          <div className="mt-8">
+            <InfoCard 
+              icon={<Clock className="w-5 h-5 text-primary" />} 
+              title="Horaire" 
+              details={[
+                "Arrivée: samedi ou dimanche",
+                "Samedi soir: souper xx",
+                "Dimanche fin de journée: cérémonie et réception",
+                "Lundi: déjeuner et départ"
+              ]} 
+            />
+          </div>
         </div>
 
         <EucalyptusDivider className="mt-16" />
