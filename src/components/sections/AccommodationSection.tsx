@@ -1,9 +1,7 @@
 import { Hotel, Phone, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 export const AccommodationSection = () => {
-  return (
-    <section id="hebergement" className="py-24 bg-background">
+  return <section id="hebergement" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
@@ -37,18 +35,13 @@ export const AccommodationSection = () => {
 
 
             <div className="text-center">
-              <Button
-                variant="outline"
-                className="gap-2"
-                onClick={() => window.open("#", "_blank")}
-              >
-                Réserver en ligne
+              <Button variant="outline" className="gap-2" onClick={() => window.open("#", "_blank")}>
+                ​Pour réserver    
                 <ExternalLink className="w-4 h-4" />
               </Button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
