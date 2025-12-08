@@ -1,8 +1,6 @@
 import { Heart } from "lucide-react";
-
 export const Footer = () => {
-  return (
-    <footer className="py-12 bg-background border-t border-border">
+  return <footer className="py-12 bg-background border-t border-border">
       <div className="container mx-auto px-6 text-center">
         <p className="font-serif text-2xl text-foreground mb-4">
           P & E
@@ -11,9 +9,8 @@ export const Footer = () => {
           Fait avec <Heart className="w-4 h-4 text-primary fill-primary" /> pour notre grand jour
         </p>
         <p className="text-muted-foreground/60 text-xs mt-4">
-          [Date du mariage] • [Lieu]
+           6 septembre 2026 • Auberge des Iles   
         </p>
       </div>
-    </footer>
-  );
+    </footer>;
 };
