@@ -23,7 +23,7 @@ export const AccommodationSection = () => {
             </div>
 
             <h3 className="font-serif text-2xl text-center text-foreground mb-6">
-              [Nom de l'hôtel]
+              Auberge des Iles
             </h3>
 
             <div className="space-y-4 text-center text-muted-foreground mb-8">
