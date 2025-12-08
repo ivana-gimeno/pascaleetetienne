@@ -14,7 +14,11 @@ const InfoCard = ({
       {icon}
     </div>
     <h3 className="font-serif text-xl text-foreground mb-4">{title}</h3>
-    {details.map((detail, index) => {})}
+    {details.map((detail, index) => (
+      <p key={index} className="text-muted-foreground text-sm leading-relaxed">
+        {detail}
+      </p>
+    ))}
   </div>;
 export const WeddingInfoSection = () => {
   return <section className="py-24 bg-secondary/30">
