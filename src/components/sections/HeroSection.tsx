@@ -20,7 +20,7 @@ export const HeroSection = () => {
           <div className="w-24 h-px bg-primary mx-auto my-8" />
           
           <p className="font-serif text-2xl md:text-3xl text-primary mb-8">
-            Date à définir
+            6 septembre 2026
           </p>
           
           <p className="text-muted-foreground text-lg mb-12 max-w-md mx-auto">
