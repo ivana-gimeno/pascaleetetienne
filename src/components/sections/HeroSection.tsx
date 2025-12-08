@@ -1,11 +1,6 @@
 import { EucalyptusDecor } from "@/components/EucalyptusDecor";
-
 export const HeroSection = () => {
-  return (
-    <section
-      id="mariage"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-    >
+  return <section id="mariage" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Subtle eucalyptus decorations */}
       <EucalyptusDecor position="top-left" variant={1} size="lg" rotate={-15} className="opacity-40" />
       <EucalyptusDecor position="top-right" variant={2} size="md" flip rotate={20} className="opacity-40" />
@@ -19,7 +14,7 @@ export const HeroSection = () => {
           </p>
           
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-foreground mb-4 tracking-wide">
-            Prénoms & Prénoms
+            Pascale &amp; Étienne
           </h1>
           
           <div className="w-24 h-px bg-primary mx-auto my-8" />
@@ -47,6 +42,5 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
