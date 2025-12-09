@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import siteBackground from "@/assets/site-background.avif";
+import siteBackground from "@/assets/site-background.png";
 
 interface SiteLayoutProps {
   children: ReactNode;
