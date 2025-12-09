@@ -41,7 +41,7 @@ export const SiteHeader = () => {
         <img 
           src={eucalyptusHeader} 
           alt="" 
-          className="mx-auto h-12 md:h-16 mt-2 opacity-80"
+          className="mx-auto h-20 md:h-28 mt-1 object-contain object-top"
         />
       </div>
 
