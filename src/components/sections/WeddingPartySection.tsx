@@ -20,7 +20,7 @@ const PartyMember = ({ name, role, description }: PartyMemberProps) => (
 export const WeddingPartySection = () => {
   const partyMembers = [
     {
-      name: "[Nom]",
+      name: "Tania",
       role: "Témoin de la mariée",
       description: "[Description courte de la personne et de votre relation]"
     },
