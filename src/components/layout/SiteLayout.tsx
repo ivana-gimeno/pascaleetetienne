@@ -10,8 +10,11 @@ export const SiteLayout = ({ children }: SiteLayoutProps) => {
     <div className="min-h-screen relative">
       {/* COUCHE 1 - Arrière-plan fixe */}
       <div 
-        className="fixed inset-0 bg-cover bg-center bg-no-repeat -z-10"
-        style={{ backgroundImage: `url(${siteBackground})` }}
+        className="fixed inset-0 bg-cover bg-right bg-no-repeat -z-10"
+        style={{ 
+          backgroundImage: `url(${siteBackground})`,
+          filter: 'saturate(1.2) contrast(1.05)'
+        }}
       />
       
       {/* COUCHE 2 - Conteneur central blanc/beige */}
