@@ -10,9 +10,6 @@ const navItems = [{
   label: "Hébergement",
   href: "#hebergement"
 }, {
-  label: "Horaire",
-  href: "#horaire"
-}, {
   label: "Wedding Party",
   href: "#wedding-party"
 }, {
@@ -41,7 +38,15 @@ export const SiteHeader = () => {
       {/* Navigation desktop */}
       <nav className="hidden md:block border-t border-border/30">
         <div className="flex justify-center items-center gap-6 lg:gap-10 py-4">
-          {navItems.map(item => {})}
+          {navItems.map(item => (
+            <button
+              key={item.href}
+              onClick={() => scrollToSection(item.href)}
+              className="text-sm tracking-wide text-muted-foreground hover:text-primary transition-colors"
+            >
+              {item.label}
+            </button>
+          ))}
         </div>
       </nav>
 
