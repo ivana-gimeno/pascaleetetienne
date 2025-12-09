@@ -7,6 +7,7 @@ import { OurStorySection } from "@/components/sections/OurStorySection";
 import { RegistrySection } from "@/components/sections/RegistrySection";
 import { RSVPSection } from "@/components/sections/RSVPSection";
 import { Footer } from "@/components/Footer";
+import { SectionDivider } from "@/components/SectionDivider";
 
 export const WeddingSite = () => {
   return (
@@ -16,9 +17,13 @@ export const WeddingSite = () => {
         <HeroBanner />
         <div className="px-6 md:px-12 lg:px-16">
           <WeddingInfoSection />
+          <SectionDivider variant={2} />
           <AccommodationSection />
+          <SectionDivider variant={1} flip />
           <OurStorySection />
+          <SectionDivider variant={2} flip />
           <RegistrySection />
+          <SectionDivider variant={1} />
           <RSVPSection />
         </div>
       </main>
