@@ -1,5 +1,6 @@
-import { Hotel, Phone, ExternalLink } from "lucide-react";
+import { Hotel, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import venuePhoto from "@/assets/venue-photo.webp";
 export const AccommodationSection = () => {
   return <section id="hebergement" className="py-24 bg-background">
       <div className="container mx-auto px-6">
@@ -40,6 +41,15 @@ export const AccommodationSection = () => {
               </Button>
             </div>
           </div>
+        </div>
+
+        {/* Venue photo */}
+        <div className="max-w-3xl mx-auto mt-12">
+          <img 
+            src={venuePhoto} 
+            alt="Auberge des Iles - Lieu de réception" 
+            className="w-full aspect-[16/9] object-cover rounded-sm shadow-md"
+          />
         </div>
       </div>
     </section>;
