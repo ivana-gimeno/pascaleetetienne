@@ -1,6 +1,7 @@
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { HeroBanner } from "@/components/layout/HeroBanner";
+import heroCoupleImage from "@/assets/hero-couple.jpg";
 import { WeddingInfoSection } from "@/components/sections/WeddingInfoSection";
 import { AccommodationSection } from "@/components/sections/AccommodationSection";
 import { OurStorySection } from "@/components/sections/OurStorySection";
@@ -13,7 +14,7 @@ export const WeddingSite = () => {
     <SiteLayout>
       <SiteHeader />
       <main>
-        <HeroBanner />
+        <HeroBanner imageSrc={heroCoupleImage} alt="Pascale & Étienne" />
         <div className="px-6 md:px-12 lg:px-16">
           <WeddingInfoSection />
           <AccommodationSection />
