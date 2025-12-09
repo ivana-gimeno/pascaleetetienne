@@ -1,5 +1,6 @@
-import { Navigation } from "@/components/Navigation";
-import { HeroSection } from "@/components/sections/HeroSection";
+import { SiteLayout } from "@/components/layout/SiteLayout";
+import { SiteHeader } from "@/components/layout/SiteHeader";
+import { HeroBanner } from "@/components/layout/HeroBanner";
 import { WeddingInfoSection } from "@/components/sections/WeddingInfoSection";
 import { AccommodationSection } from "@/components/sections/AccommodationSection";
 import { OurStorySection } from "@/components/sections/OurStorySection";
@@ -9,17 +10,19 @@ import { Footer } from "@/components/Footer";
 
 export const WeddingSite = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <SiteLayout>
+      <SiteHeader />
       <main>
-        <HeroSection />
-        <WeddingInfoSection />
-        <AccommodationSection />
-        <OurStorySection />
-        <RegistrySection />
-        <RSVPSection />
+        <HeroBanner />
+        <div className="px-6 md:px-12 lg:px-16">
+          <WeddingInfoSection />
+          <AccommodationSection />
+          <OurStorySection />
+          <RegistrySection />
+          <RSVPSection />
+        </div>
       </main>
       <Footer />
-    </div>
+    </SiteLayout>
   );
 };
