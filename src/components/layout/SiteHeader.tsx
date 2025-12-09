@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import eucalyptusHeader from "@/assets/eucalyptus-header.png";
+
 const navItems = [{
   label: "Mariage",
   href: "#mariage"
@@ -32,10 +34,15 @@ export const SiteHeader = () => {
   };
   return <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/30 shadow-sm">
       {/* Titre principal */}
-      <div className="py-8 md:py-12 text-center">
+      <div className="pt-6 pb-2 md:pt-8 md:pb-3 text-center">
         <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl tracking-wider text-foreground">
           Pascale & Etienne
         </h1>
+        <img 
+          src={eucalyptusHeader} 
+          alt="" 
+          className="mx-auto h-12 md:h-16 mt-2 opacity-80"
+        />
       </div>
 
       {/* Navigation desktop */}
