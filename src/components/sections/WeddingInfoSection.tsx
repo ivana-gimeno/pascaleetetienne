@@ -1,5 +1,6 @@
 import { MapPin, Clock, Calendar } from "lucide-react";
 import { EucalyptusDivider } from "@/components/EucalyptusDecor";
+import venuePhoto from "@/assets/venue-photo.webp";
 interface InfoCardProps {
   icon: React.ReactNode;
   title: string;
@@ -64,18 +65,13 @@ export const WeddingInfoSection = () => {
 
         <EucalyptusDivider className="mt-16" />
 
-        {/* Additional venue photo placeholder */}
+        {/* Venue photo */}
         <div className="max-w-3xl mx-auto mt-8">
-          <div className="aspect-[16/9] bg-muted/50 border-2 border-dashed border-border rounded-sm flex items-center justify-center">
-            <div className="text-center p-8">
-              <p className="text-muted-foreground text-sm">
-                Photo du lieu de réception
-              </p>
-              <p className="text-muted-foreground/60 text-xs mt-2">
-                Format recommandé: 16:9
-              </p>
-            </div>
-          </div>
+          <img 
+            src={venuePhoto} 
+            alt="Auberge des Iles - Lieu de réception" 
+            className="w-full aspect-[16/9] object-cover rounded-sm shadow-md"
+          />
         </div>
       </div>
     </section>;
