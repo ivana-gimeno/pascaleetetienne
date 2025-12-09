@@ -5,6 +5,7 @@ import heroCoupleImage from "@/assets/hero-couple.jpg";
 import { WeddingInfoSection } from "@/components/sections/WeddingInfoSection";
 import { AccommodationSection } from "@/components/sections/AccommodationSection";
 import { OurStorySection } from "@/components/sections/OurStorySection";
+import { WeddingPartySection } from "@/components/sections/WeddingPartySection";
 import { RegistrySection } from "@/components/sections/RegistrySection";
 import { RSVPSection } from "@/components/sections/RSVPSection";
 import { Footer } from "@/components/Footer";
@@ -19,6 +20,7 @@ export const WeddingSite = () => {
           <WeddingInfoSection />
           <AccommodationSection />
           <OurStorySection />
+          <WeddingPartySection />
           <RegistrySection />
           <RSVPSection />
         </div>
