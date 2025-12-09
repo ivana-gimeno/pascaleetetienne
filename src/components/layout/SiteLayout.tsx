@@ -13,9 +13,9 @@ export const SiteLayout = ({ children }: SiteLayoutProps) => {
         className="fixed inset-0 bg-no-repeat -z-10"
         style={{ 
           backgroundImage: `url(${siteBackground})`,
-          backgroundSize: '60%',
-          backgroundPosition: 'top right',
-          filter: 'saturate(1.2) contrast(1.05)'
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          filter: 'saturate(1.1) contrast(1.02)'
         }}
       />
       
