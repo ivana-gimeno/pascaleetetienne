@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Lock } from "lucide-react";
 import { EucalyptusDecor } from "@/components/EucalyptusDecor";
-import authBackground from "@/assets/auth-background.avif";
+import authBackground from "@/assets/auth-background.jpg";
 
 interface PasswordGateProps {
   onSuccess: () => void;
