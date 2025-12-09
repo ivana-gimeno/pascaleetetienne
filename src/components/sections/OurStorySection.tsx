@@ -16,7 +16,7 @@ const StoryChapter = ({ title, date, content }: StoryChapterProps) => (
 
 export const OurStorySection = () => {
   return (
-    <section id="histoire" className="py-24 bg-secondary/30 relative overflow-hidden">
+    <section id="notre-histoire" className="py-24 bg-secondary/30 relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
