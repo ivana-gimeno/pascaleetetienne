@@ -44,11 +44,11 @@ export const AccommodationSection = () => {
         </div>
 
         {/* Venue photo */}
-        <div className="max-w-3xl mx-auto mt-12">
+        <div className="max-w-3xl mx-auto mt-12 relative">
           <img 
             src={venuePhoto} 
             alt="Auberge des Iles - Lieu de réception" 
-            className="w-full aspect-[16/9] object-cover rounded-sm shadow-md"
+            className="w-full aspect-[16/9] object-cover rounded-sm shadow-md brightness-75"
           />
         </div>
       </div>
