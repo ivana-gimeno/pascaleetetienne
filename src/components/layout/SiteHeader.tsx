@@ -22,7 +22,7 @@ export const SiteHeader = () => {
   };
 
   return (
-    <header className="bg-background/95 border-b border-border/30">
+    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/30 shadow-sm">
       {/* Titre principal */}
       <div className="py-8 md:py-12 text-center">
         <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl tracking-wider text-foreground">
