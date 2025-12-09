@@ -1,4 +1,7 @@
 import { EucalyptusDivider } from "@/components/EucalyptusDecor";
+import couplePhoto1 from "@/assets/couple-photo-1.jpeg";
+import couplePhoto2 from "@/assets/couple-photo-2.jpeg";
+import couplePhoto3 from "@/assets/couple-photo-3.jpeg";
 
 interface StoryChapterProps {
   title: string;
@@ -13,6 +16,12 @@ const StoryChapter = ({ title, date, content }: StoryChapterProps) => (
     <p className="text-muted-foreground leading-relaxed">{content}</p>
   </div>
 );
+
+const couplePhotos = [
+  { src: couplePhoto1, alt: "Pascale et Étienne en Suisse" },
+  { src: couplePhoto2, alt: "Pascale et Étienne en randonnée" },
+  { src: couplePhoto3, alt: "Pascale et Étienne à la plage" },
+];
 
 export const OurStorySection = () => {
   return (
@@ -51,21 +60,19 @@ export const OurStorySection = () => {
           />
         </div>
 
-        {/* Photo gallery placeholder */}
+        {/* Photo gallery */}
         <div className="mt-20">
           <h3 className="font-serif text-xl text-center text-foreground mb-8">
             Quelques moments ensemble
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {[1, 2, 3].map((i) => (
-              <div
+            {couplePhotos.map((photo, i) => (
+              <img
                 key={i}
-                className="aspect-square bg-muted/50 border-2 border-dashed border-border rounded-sm flex items-center justify-center"
-              >
-                <p className="text-muted-foreground text-xs text-center p-4">
-                  Photo {i}
-                </p>
-              </div>
+                src={photo.src}
+                alt={photo.alt}
+                className="aspect-square object-cover rounded-sm"
+              />
             ))}
           </div>
         </div>
