@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 const navItems = [{
-  label: "Notre histoire",
-  href: "#notre-histoire"
-}, {
   label: "Mariage",
   href: "#mariage"
 }, {
@@ -12,6 +9,9 @@ const navItems = [{
 }, {
   label: "Hébergement",
   href: "#hebergement"
+}, {
+  label: "Notre histoire",
+  href: "#notre-histoire"
 }, {
   label: "Wedding Party",
   href: "#wedding-party"
