@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Lock } from "lucide-react";
 import { EucalyptusDecor } from "@/components/EucalyptusDecor";
+import authBackground from "@/assets/auth-background.avif";
 
 interface PasswordGateProps {
   onSuccess: () => void;
@@ -30,6 +31,11 @@ export const PasswordGate = ({ onSuccess }: PasswordGateProps) => {
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center relative overflow-hidden">
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-20"
+        style={{ backgroundImage: `url(${authBackground})` }}
+      />
       <EucalyptusDecor position="top-left" variant={1} size="lg" rotate={-15} className="opacity-30" />
       <EucalyptusDecor position="top-right" variant={2} size="md" flip rotate={20} className="opacity-30" />
       <EucalyptusDecor position="bottom-left" variant={3} size="md" rotate={10} className="opacity-25" />
