@@ -44,7 +44,7 @@ export const AccommodationSection = () => {
         </div>
 
         {/* Venue photo */}
-        <div className="max-w-3xl mx-auto mt-12 relative">
+        <div className="max-w-2xl mx-auto mt-12 relative">
           <img 
             src={venuePhoto} 
             alt="Auberge des Iles - Lieu de réception" 
