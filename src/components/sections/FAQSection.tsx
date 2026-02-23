@@ -9,7 +9,7 @@ const faqItems = [
   {
     question: "Puis-je amener un accompagnateur?",
     answer:
-      "Votre invitation précise le nombre de places réservées à votre nom. Si vous souhaitez être accompagné(e), veuillez nous contacter directement afin que nous puissions en discuter.",
+      "Afin de respecter la capacité de notre lieu de réception, seules les personnes nommées sur l'invitation pourront être présentes. Nous vous remercions de votre compréhension!",
   },
   {
     question: "Y a-t-il un code vestimentaire?",
