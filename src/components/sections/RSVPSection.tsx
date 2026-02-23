@@ -13,15 +13,27 @@ export const RSVPSection = () => {
     name: "",
     email: "",
     attendance: "",
-    guests: "",
+    additionalGuests: "0",
+    guestNames: [] as string[],
     dietaryRestrictions: "",
     message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Placeholder - backend to be added later
+
+    if (formData.attendance === "yes") {
+      const count = parseInt(formData.additionalGuests) || 0;
+      if (count > 0 && formData.guestNames.some((n) => !n.trim())) {
+        toast({
+          title: "Champs manquants",
+          description: "Veuillez entrer le nom complet de chaque invité.",
+          variant: "destructive",
+        });
+        return;
+      }
+    }
+
     toast({
       title: "Merci!",
       description: "Votre réponse a été enregistrée. (Fonctionnalité bientôt active)",
@@ -32,6 +44,18 @@ export const RSVPSection = () => {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleAdditionalGuestsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const count = Math.max(0, Math.min(9, parseInt(e.target.value) || 0));
+    const newNames = Array.from({ length: count }, (_, i) => formData.guestNames[i] || "");
+    setFormData({ ...formData, additionalGuests: String(count), guestNames: newNames });
+  };
+
+  const handleGuestNameChange = (index: number, value: string) => {
+    const newNames = [...formData.guestNames];
+    newNames[index] = value;
+    setFormData({ ...formData, guestNames: newNames });
   };
 
   return (
@@ -83,7 +107,7 @@ export const RSVPSection = () => {
               <RadioGroup
                 value={formData.attendance}
                 onValueChange={(value) =>
-                  setFormData({ ...formData, attendance: value })
+                  setFormData({ ...formData, attendance: value, additionalGuests: "0", guestNames: [] })
                 }
                 className="flex gap-6"
               >
@@ -105,19 +129,36 @@ export const RSVPSection = () => {
             {formData.attendance === "yes" && (
               <>
                 <div className="space-y-2">
-                  <Label htmlFor="guests">Nombre de personnes (incluant vous)</Label>
+                  <Label htmlFor="additionalGuests">
+                    Combien de personnes supplémentaires vous accompagnent?
+                  </Label>
                   <Input
-                    id="guests"
-                    name="guests"
+                    id="additionalGuests"
+                    name="additionalGuests"
                     type="number"
-                    min="1"
-                    max="10"
-                    value={formData.guests}
-                    onChange={handleChange}
-                    placeholder="1"
-                    className="bg-background"
+                    min="0"
+                    max="9"
+                    value={formData.additionalGuests}
+                    onChange={handleAdditionalGuestsChange}
+                    className="bg-background w-24"
                   />
                 </div>
+
+                {parseInt(formData.additionalGuests) > 0 && (
+                  <div className="space-y-3 pl-4 border-l-2 border-primary/20">
+                    <Label>Nom complet de chaque invité *</Label>
+                    {formData.guestNames.map((name, index) => (
+                      <Input
+                        key={index}
+                        value={name}
+                        onChange={(e) => handleGuestNameChange(index, e.target.value)}
+                        placeholder={`Invité ${index + 1}`}
+                        required
+                        className="bg-background"
+                      />
+                    ))}
+                  </div>
+                )}
 
                 <div className="space-y-2">
                   <Label htmlFor="dietaryRestrictions">
