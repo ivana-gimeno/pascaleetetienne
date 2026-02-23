@@ -23,8 +23,8 @@ export const WeddingSite = () => {
           <OurStorySection />
           <WeddingPartySection />
           <RegistrySection />
-          <RSVPSection />
           <FAQSection />
+          <RSVPSection />
         </div>
       </main>
       <Footer />
