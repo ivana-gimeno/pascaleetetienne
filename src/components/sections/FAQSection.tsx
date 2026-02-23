@@ -14,7 +14,7 @@ const faqItems = [
   {
     question: "Y a-t-il un code vestimentaire?",
     answer:
-      "Nous vous suggérons une tenue semi-formelle. Pensez à des couleurs douces et estivales — et n'oubliez pas vos chaussures confortables pour danser!",
+      "Nous vous demandons une tenue formelle dans des tons neutres (noir, blanc, beige, gris, marine, etc.). N'oubliez pas vos chaussures confortables pour danser!",
   },
   {
     question: "Puis-je prendre des photos pendant la cérémonie?",
