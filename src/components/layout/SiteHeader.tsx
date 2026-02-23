@@ -6,9 +6,6 @@ const navItems = [{
   label: "Mariage",
   href: "#mariage"
 }, {
-  label: "RSVP",
-  href: "#rsvp"
-}, {
   label: "Hébergement",
   href: "#hebergement"
 }, {
@@ -20,6 +17,10 @@ const navItems = [{
 }, {
   label: "Q & A",
   href: "#qa"
+}, {
+  label: "RSVP",
+  href: "#rsvp",
+  accent: true
 }];
 export const SiteHeader = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -52,7 +53,11 @@ export const SiteHeader = () => {
             <button
               key={item.href}
               onClick={() => scrollToSection(item.href)}
-              className="text-sm tracking-wide text-muted-foreground hover:text-primary transition-colors"
+              className={`text-sm tracking-wide transition-colors ${
+                'accent' in item && item.accent
+                  ? "text-primary font-medium border border-primary/30 rounded-full px-4 py-1 hover:bg-primary hover:text-primary-foreground"
+                  : "text-muted-foreground hover:text-primary"
+              }`}
             >
               {item.label}
             </button>
@@ -70,7 +75,11 @@ export const SiteHeader = () => {
         {/* Menu mobile déroulant */}
         {mobileMenuOpen && <div className="border-t border-border/30 bg-background animate-fade-in">
             <div className="flex flex-col">
-              {navItems.map(item => <button key={item.href} onClick={() => scrollToSection(item.href)} className="px-6 py-3 text-center text-muted-foreground hover:text-primary hover:bg-accent/50 transition-colors border-b border-border/20 last:border-b-0">
+              {navItems.map(item => <button key={item.href} onClick={() => scrollToSection(item.href)} className={`px-6 py-3 text-center transition-colors border-b border-border/20 last:border-b-0 ${
+                'accent' in item && item.accent
+                  ? "text-primary font-medium hover:bg-primary/10"
+                  : "text-muted-foreground hover:text-primary hover:bg-accent/50"
+              }`}>
                   {item.label}
                 </button>)}
             </div>
