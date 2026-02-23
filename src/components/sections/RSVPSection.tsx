@@ -130,7 +130,7 @@ export const RSVPSection = () => {
               <>
                 <div className="space-y-2">
                   <Label htmlFor="additionalGuests">
-                    Combien de personnes supplémentaires vous accompagnent?
+                    Pour combien d'autres invités répondez-vous?
                   </Label>
                   <Input
                     id="additionalGuests"
