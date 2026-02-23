@@ -8,6 +8,7 @@ import { OurStorySection } from "@/components/sections/OurStorySection";
 import { WeddingPartySection } from "@/components/sections/WeddingPartySection";
 import { RegistrySection } from "@/components/sections/RegistrySection";
 import { RSVPSection } from "@/components/sections/RSVPSection";
+import { FAQSection } from "@/components/sections/FAQSection";
 import { Footer } from "@/components/Footer";
 
 export const WeddingSite = () => {
@@ -23,6 +24,7 @@ export const WeddingSite = () => {
           <WeddingPartySection />
           <RegistrySection />
           <RSVPSection />
+          <FAQSection />
         </div>
       </main>
       <Footer />
