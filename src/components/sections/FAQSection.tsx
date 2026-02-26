@@ -32,6 +32,11 @@ const faqItems = [
       "Nous adorons vos petits, mais nous avons choisi de réserver cette soirée aux adultes. Nous espérons que cela vous permettra de profiter d'une belle soirée sans soucis!",
   },
   {
+    question: "Est-ce que ce sera open bar?",
+    answer:
+      "Non, il n'y aura pas de bar ouvert. Les mariés offrent un cocktail de célébration ainsi que le vin pendant le repas.",
+  },
+  {
     question: "Avez-vous une liste de mariage?",
     answer:
       "Votre présence est le plus beau des cadeaux! Si vous souhaitez tout de même nous gâter, nous avons préparé quelques suggestions dans la section Registre de cadeaux.",
