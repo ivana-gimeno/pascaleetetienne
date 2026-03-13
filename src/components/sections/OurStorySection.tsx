@@ -12,7 +12,7 @@ interface StoryChapterProps {
 const StoryChapter = ({ title, date, content }: StoryChapterProps) =>
 <div className="text-center max-w-2xl mx-auto">
     
-    <p className="text-primary text-sm tracking-wide mb-6 text-left">{date}</p>
+    <p className="text-primary text-sm tracking-wide mb-6 text-right">{date}</p>
     <p className="text-muted-foreground leading-relaxed whitespace-pre-line text-right">{content}</p>
   </div>;
 
