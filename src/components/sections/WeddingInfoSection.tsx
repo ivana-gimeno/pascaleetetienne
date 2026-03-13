@@ -14,11 +14,11 @@ const InfoCard = ({
       {icon}
     </div>
     <h3 className="font-serif text-xl text-foreground mb-4">{title}</h3>
-    {details.map((detail, index) => (
-      <p key={index} className="text-muted-foreground text-sm leading-relaxed">
+    {details.map((detail, index) =>
+  <p key={index} className="text-muted-foreground text-sm leading-relaxed">
         {detail}
       </p>
-    ))}
+  )}
   </div>;
 export const WeddingInfoSection = () => {
   return <section className="py-24 bg-secondary/30">
@@ -47,7 +47,8 @@ export const WeddingInfoSection = () => {
               <div className="max-w-md mx-auto space-y-4">
                 <div className="flex justify-between items-baseline gap-8">
                   <span className="text-foreground font-medium text-left">Samedi soir</span>
-                  <span className="text-muted-foreground text-sm text-right">Souper xx</span>
+                  <span className="text-muted-foreground text-sm text-right">​Un souper sera organisé avec les personnes présentes, détails à venir          
+                </span>
                 </div>
                 <div className="flex justify-between items-baseline gap-8">
                   <span className="text-foreground font-medium text-left">Dimanche fin de journée</span>
@@ -64,5 +65,4 @@ export const WeddingInfoSection = () => {
 
         <EucalyptusDivider className="mt-16" />
       </div>
-    </section>;
-};
+    </section>;};
