@@ -5,12 +5,13 @@ import couplePhoto3 from "@/assets/couple-photo-3.jpeg";
 interface StoryChapterProps {
   name: string;
   content: string;
+  align?: "left" | "right";
 }
 
-const StoryChapter = ({ name, content }: StoryChapterProps) => (
-  <div className="text-center max-w-2xl mx-auto">
-    <p className="text-primary text-sm tracking-wide mb-6 text-right">{name}</p>
-    <p className="text-muted-foreground leading-relaxed whitespace-pre-line text-right">{content}</p>
+const StoryChapter = ({ name, content, align = "left" }: StoryChapterProps) => (
+  <div className={`max-w-2xl mx-auto ${align === "right" ? "text-right" : "text-left"}`}>
+    <p className="text-primary text-sm tracking-wide mb-6">{name}</p>
+    <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{content}</p>
   </div>
 );
 
