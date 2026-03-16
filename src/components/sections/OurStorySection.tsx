@@ -59,6 +59,7 @@ export const OurStorySection = () => {
           {/* La demande */}
           <StorySectionGroup title="La demande">
             <StoryChapter
+              align="left"
               name="Pascale"
               content={"2023. On s'en va au Mexique. À Bacalar. 4 nuits. Sans enfant. LETS GO. L'endroit est magnifique. Pas d'enfant, pas de budget. Première journée, on prend ça relax. Il est bizarre de s'en aller au spa et de ne pas me proposer de venir avec lui. Oh well. Le soir on a un souper en amoureux sur le quai. L'attention est sur nous. Y'a ben trop de bouffe. C'est pas si bon. Je chiale. Il fait sa demande. What?"}
             />
