@@ -73,10 +73,12 @@ export const OurStorySection = () => {
           {/* Et maintenant */}
           <StorySectionGroup title="Et maintenant">
             <StoryChapter
+              align="left"
               name="Pascale"
               content="Nous voici quelques années plus tard."
             />
             <StoryChapter
+              align="right"
               name="Étienne"
               content="[Texte à venir]"
             />
