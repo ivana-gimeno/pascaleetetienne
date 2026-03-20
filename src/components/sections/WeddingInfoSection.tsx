@@ -44,25 +44,22 @@ export const WeddingInfoSection = () => {
                 <Clock className="w-5 h-5 text-primary" />
               </div>
               <h3 className="font-serif text-xl text-foreground mb-6">Horaire</h3>
-              <div className="max-w-md mx-auto space-y-4">
-                <div className="flex justify-between items-baseline gap-8">
-                  <span className="text-foreground font-medium text-left">Samedi soir</span>
-                  <span className="text-muted-foreground text-sm text-right">​Un souper sera organisé avec les personnes présentes, détails à venir          
-                </span>
-                </div>
-                <div className="flex justify-between items-baseline gap-8">
-                  <span className="text-foreground font-medium text-left">16h00: cocktail de bienvenue
-
-18h00: cérémonie
-
-19h30: réception et repas<br />fin de journée</span>
-                  <span className="text-muted-foreground text-sm text-right">Cérémonie et réception</span>
-                </div>
-                <div className="flex justify-between items-baseline gap-8">
-                  <span className="text-foreground font-medium text-left">Lundi</span>
-                  <span className="text-muted-foreground text-sm text-right">Déjeuner et départ</span>
-                </div>
-              </div>
+              <table className="max-w-lg mx-auto w-full text-left">
+                <tbody>
+                  <tr className="border-b border-border/30">
+                    <td className="py-4 pr-8 text-foreground font-medium align-top whitespace-nowrap">Samedi</td>
+                    <td className="py-4 text-muted-foreground text-sm align-top"></td>
+                  </tr>
+                  <tr className="border-b border-border/30">
+                    <td className="py-4 pr-8 text-foreground font-medium align-top whitespace-nowrap">Dimanche</td>
+                    <td className="py-4 text-muted-foreground text-sm align-top"></td>
+                  </tr>
+                  <tr>
+                    <td className="py-4 pr-8 text-foreground font-medium align-top whitespace-nowrap">Lundi</td>
+                    <td className="py-4 text-muted-foreground text-sm align-top"></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
