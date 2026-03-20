@@ -47,10 +47,15 @@ export const WeddingInfoSection = () => {
               <div className="max-w-md mx-auto space-y-4">
                 <div className="flex justify-between items-baseline gap-8">
                   <span className="text-foreground font-medium text-left">Samedi soir</span>
-                  <span className="text-muted-foreground text-sm text-right">Un souper sera organisé avec les personnes présentes, détails à venir</span>
+                  <span className="text-muted-foreground text-sm text-right">​Un souper sera organisé avec les personnes présentes, détails à venir          
+                </span>
                 </div>
                 <div className="flex justify-between items-baseline gap-8">
-                  <span className="text-foreground font-medium text-left">Dimanche</span>
+                  <span className="text-foreground font-medium text-left">16h00: cocktail de bienvenue
+
+18h00: cérémonie
+
+19h30: réception et repas<br />fin de journée</span>
                   <span className="text-muted-foreground text-sm text-right">Cérémonie et réception</span>
                 </div>
                 <div className="flex justify-between items-baseline gap-8">
