@@ -13,30 +13,15 @@ export const RSVPSection = () => {
     name: "",
     email: "",
     attendance: "",
-    additionalGuests: "0",
-    guestNames: [] as string[],
-    dietaryRestrictions: "",
-    message: "",
+    meal: "",
+    allergies: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
-    if (formData.attendance === "yes") {
-      const count = parseInt(formData.additionalGuests) || 0;
-      if (count > 0 && formData.guestNames.some((n) => !n.trim())) {
-        toast({
-          title: "Champs manquants",
-          description: "Veuillez entrer le nom complet de chaque invité.",
-          variant: "destructive",
-        });
-        return;
-      }
-    }
-
     toast({
       title: "Merci!",
-      description: "Votre réponse a été enregistrée. (Fonctionnalité bientôt active)",
+      description: "Votre réponse a été enregistrée.",
     });
   };
 
@@ -44,18 +29,6 @@ export const RSVPSection = () => {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleAdditionalGuestsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const count = Math.max(0, Math.min(9, parseInt(e.target.value) || 0));
-    const newNames = Array.from({ length: count }, (_, i) => formData.guestNames[i] || "");
-    setFormData({ ...formData, additionalGuests: String(count), guestNames: newNames });
-  };
-
-  const handleGuestNameChange = (index: number, value: string) => {
-    const newNames = [...formData.guestNames];
-    newNames[index] = value;
-    setFormData({ ...formData, guestNames: newNames });
   };
 
   return (
@@ -107,7 +80,7 @@ export const RSVPSection = () => {
               <RadioGroup
                 value={formData.attendance}
                 onValueChange={(value) =>
-                  setFormData({ ...formData, attendance: value, additionalGuests: "0", guestNames: [] })
+                  setFormData({ ...formData, attendance: value })
                 }
                 className="flex gap-6"
               >
@@ -128,67 +101,46 @@ export const RSVPSection = () => {
 
             {formData.attendance === "yes" && (
               <>
-                <div className="space-y-2">
-                  <Label htmlFor="additionalGuests">
-                    Pour combien d'autres invités répondez-vous?
-                  </Label>
-                  <Input
-                    id="additionalGuests"
-                    name="additionalGuests"
-                    type="number"
-                    min="0"
-                    max="9"
-                    value={formData.additionalGuests}
-                    onChange={handleAdditionalGuestsChange}
-                    className="bg-background w-24"
-                  />
+                <div className="space-y-3">
+                  <Label>Quel repas voulez-vous? *</Label>
+                  <RadioGroup
+                    value={formData.meal}
+                    onValueChange={(value) =>
+                      setFormData({ ...formData, meal: value })
+                    }
+                    className="flex gap-6"
+                  >
+                    <div className="flex items-center space-x-2">
+                      <RadioGroupItem value="viande" id="viande" />
+                      <Label htmlFor="viande" className="font-normal cursor-pointer">
+                        Viande
+                      </Label>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <RadioGroupItem value="poisson" id="poisson" />
+                      <Label htmlFor="poisson" className="font-normal cursor-pointer">
+                        Poisson
+                      </Label>
+                    </div>
+                  </RadioGroup>
                 </div>
 
-                {parseInt(formData.additionalGuests) > 0 && (
-                  <div className="space-y-3 pl-4 border-l-2 border-primary/20">
-                    <Label>Nom complet de chaque invité *</Label>
-                    {formData.guestNames.map((name, index) => (
-                      <Input
-                        key={index}
-                        value={name}
-                        onChange={(e) => handleGuestNameChange(index, e.target.value)}
-                        placeholder={`Invité ${index + 1}`}
-                        required
-                        className="bg-background"
-                      />
-                    ))}
-                  </div>
-                )}
-
                 <div className="space-y-2">
-                  <Label htmlFor="dietaryRestrictions">
-                    Restrictions alimentaires ou allergies
+                  <Label htmlFor="allergies">
+                    Avez-vous des intolérances alimentaires ou allergies?
                   </Label>
                   <Textarea
-                    id="dietaryRestrictions"
-                    name="dietaryRestrictions"
-                    value={formData.dietaryRestrictions}
+                    id="allergies"
+                    name="allergies"
+                    value={formData.allergies}
                     onChange={handleChange}
-                    placeholder="Végétarien, sans gluten, allergies..."
+                    placeholder="Précisez ici..."
                     className="bg-background resize-none"
                     rows={2}
                   />
                 </div>
               </>
             )}
-
-            <div className="space-y-2">
-              <Label htmlFor="message">Un petit mot pour nous (optionnel)</Label>
-              <Textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                placeholder="Votre message..."
-                className="bg-background resize-none"
-                rows={3}
-              />
-            </div>
 
             <Button type="submit" className="w-full" size="lg">
               Envoyer ma réponse
