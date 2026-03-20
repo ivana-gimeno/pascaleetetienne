@@ -13,30 +13,15 @@ export const RSVPSection = () => {
     name: "",
     email: "",
     attendance: "",
-    additionalGuests: "0",
-    guestNames: [] as string[],
-    dietaryRestrictions: "",
-    message: "",
+    meal: "",
+    allergies: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
-    if (formData.attendance === "yes") {
-      const count = parseInt(formData.additionalGuests) || 0;
-      if (count > 0 && formData.guestNames.some((n) => !n.trim())) {
-        toast({
-          title: "Champs manquants",
-          description: "Veuillez entrer le nom complet de chaque invité.",
-          variant: "destructive",
-        });
-        return;
-      }
-    }
-
     toast({
       title: "Merci!",
-      description: "Votre réponse a été enregistrée. (Fonctionnalité bientôt active)",
+      description: "Votre réponse a été enregistrée.",
     });
   };
 
@@ -44,18 +29,6 @@ export const RSVPSection = () => {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleAdditionalGuestsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const count = Math.max(0, Math.min(9, parseInt(e.target.value) || 0));
-    const newNames = Array.from({ length: count }, (_, i) => formData.guestNames[i] || "");
-    setFormData({ ...formData, additionalGuests: String(count), guestNames: newNames });
-  };
-
-  const handleGuestNameChange = (index: number, value: string) => {
-    const newNames = [...formData.guestNames];
-    newNames[index] = value;
-    setFormData({ ...formData, guestNames: newNames });
   };
 
   return (
