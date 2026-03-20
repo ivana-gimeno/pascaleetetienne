@@ -34,7 +34,7 @@ const faqItems = [
   {
     question: "Est-ce que ce sera open bar?",
     answer:
-      "Non, il n'y aura pas de bar ouvert. Les mariés offrent un cocktail de célébration ainsi que le vin pendant le repas.",
+      "Non, il n'y aura pas de bar ouvert. Les mariés offrent un cocktail de célébration ainsi que le vin pendant le repas. Un bar payant sera disponible sur place (carte de débit/crédit seulement). Les consommations personnelles apportées par les invités sont permises dans les chambres uniquement.",
   },
   {
     question: "Avez-vous une liste de mariage?",
