@@ -51,7 +51,7 @@ export const WeddingInfoSection = () => {
                 </span>
                 </div>
                 <div className="flex justify-between items-baseline gap-8">
-                  <span className="text-foreground font-medium text-left">Dimanche<br />fin de journée</span>
+                  <span className="text-foreground font-medium text-left">Dimanche</span>
                   <span className="text-muted-foreground text-sm text-right">Cérémonie et réception</span>
                 </div>
                 <div className="flex justify-between items-baseline gap-8">
