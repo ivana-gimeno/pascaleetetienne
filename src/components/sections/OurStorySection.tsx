@@ -1,6 +1,7 @@
 import couplePhoto1 from "@/assets/couple-photo-1.jpeg";
 import couplePhoto2 from "@/assets/couple-photo-2.jpeg";
 import couplePhoto3 from "@/assets/couple-photo-3.jpeg";
+import familyPhoto from "@/assets/pasc-and-fam.png";
 
 interface StoryChapterProps {
   name: string;
@@ -73,9 +74,11 @@ export const OurStorySection = () => {
           {/* Et maintenant */}
           <StorySectionGroup title="Et maintenant">
             <div className="max-w-md mx-auto">
-              <div className="aspect-[3/4] bg-muted rounded-sm flex items-center justify-center text-muted-foreground text-sm">
-                Photo à venir
-              </div>
+              <img
+                src={familyPhoto}
+                alt="Pascale, Étienne et leur famille"
+                className="w-full rounded-sm object-cover"
+              />
             </div>
           </StorySectionGroup>
         </div>
