@@ -47,8 +47,7 @@ export const WeddingInfoSection = () => {
               <div className="max-w-md mx-auto space-y-4">
                 <div className="flex justify-between items-baseline gap-8">
                   <span className="text-foreground font-medium text-left">Samedi soir</span>
-                  <span className="text-muted-foreground text-sm text-right">​Un souper sera organisé avec les personnes présentes, détails à venir          
-                </span>
+                  <span className="text-muted-foreground text-sm text-right">Un souper sera organisé avec les personnes présentes, détails à venir</span>
                 </div>
                 <div className="flex justify-between items-baseline gap-8">
                   <span className="text-foreground font-medium text-left">Dimanche</span>
