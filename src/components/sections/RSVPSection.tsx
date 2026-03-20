@@ -108,20 +108,26 @@ export const RSVPSection = () => {
                     onValueChange={(value) =>
                       setFormData({ ...formData, meal: value })
                     }
-                    className="flex gap-6"
+                    className="flex flex-col gap-4"
                   >
-                    <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="viande" id="viande" />
-                      <Label htmlFor="viande" className="font-normal cursor-pointer">
-                        Viande
-                      </Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="poisson" id="poisson" />
-                      <Label htmlFor="poisson" className="font-normal cursor-pointer">
-                        Poisson
-                      </Label>
-                    </div>
+                    <label htmlFor="poisson" className="flex items-start space-x-3 cursor-pointer">
+                      <RadioGroupItem value="poisson" id="poisson" className="mt-1" />
+                      <div>
+                        <span className="font-medium">Poisson</span>
+                        <p className="text-sm text-muted-foreground mt-0.5">
+                          Omble chevalier avec concassé de fraises à l'angélique sur risotto aux champignons et légumes de saison
+                        </p>
+                      </div>
+                    </label>
+                    <label htmlFor="viande" className="flex items-start space-x-3 cursor-pointer">
+                      <RadioGroupItem value="viande" id="viande" className="mt-1" />
+                      <div>
+                        <span className="font-medium">Viande</span>
+                        <p className="text-sm text-muted-foreground mt-0.5">
+                          Bavette de bœuf sur purée de pommes de terre fumées et légumes de saison
+                        </p>
+                      </div>
+                    </label>
                   </RadioGroup>
                 </div>
 
