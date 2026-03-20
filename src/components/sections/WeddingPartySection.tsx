@@ -30,7 +30,7 @@ export const WeddingPartySection = () => {
       description: "[Description courte de la personne et de votre relation]"
     },
     {
-      name: "[Nom]",
+      name: "Thomas",
       role: "Témoin du marié",
       description: "[Description courte de la personne et de votre relation]"
     },
