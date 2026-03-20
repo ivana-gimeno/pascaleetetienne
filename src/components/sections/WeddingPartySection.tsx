@@ -22,7 +22,7 @@ export const WeddingPartySection = () => {
     {
       name: "Tania",
       role: "Témoin de la mariée",
-      description: "[Description courte de la personne et de votre relation]"
+      description: "Organisée, dévouée et capable de calculer le timing parfait d'un mariage dans sa tête — elle est le pilier discret qui fait que tout tient ensemble, même quand elle stresse en silence."
     },
     {
       name: "Ivana",
