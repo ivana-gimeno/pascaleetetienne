@@ -72,10 +72,7 @@ export const OurStorySection = () => {
 
           {/* Et maintenant */}
           <StorySectionGroup title="Et maintenant">
-            <div className="grid grid-cols-2 gap-4 max-w-3xl mx-auto">
-              <div className="aspect-[3/4] bg-muted rounded-sm flex items-center justify-center text-muted-foreground text-sm">
-                Photo à venir
-              </div>
+            <div className="max-w-md mx-auto">
               <div className="aspect-[3/4] bg-muted rounded-sm flex items-center justify-center text-muted-foreground text-sm">
                 Photo à venir
               </div>
