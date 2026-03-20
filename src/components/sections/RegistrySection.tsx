@@ -33,7 +33,7 @@ export const RegistrySection = () => {
             <div className="bg-secondary/50 rounded-sm p-6 mb-8">
               <p className="text-sm text-muted-foreground mb-4">
                 <Heart className="w-4 h-4 inline-block mr-2 text-primary" />
-                Chaque contribution, petite ou grande, nous rapproche de notre rêve
+                Chaque contribution, petite ou grande, nous rapproche de notre rêve - vous pouvez le faire en nous envoyant un virement à: pascale.panneton@gmail.com
               </p>
               
             </div>
