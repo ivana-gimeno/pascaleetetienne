@@ -48,15 +48,19 @@ export const WeddingInfoSection = () => {
                 <tbody>
                   <tr className="border-b border-border/30">
                     <td className="py-4 pr-8 text-foreground font-medium align-top whitespace-nowrap">Samedi</td>
-                    <td className="py-4 text-muted-foreground text-sm align-top"></td>
+                    <td className="py-4 text-muted-foreground text-sm align-top">Un souper sera organisé avec les personnes présentes. Détails à venir.</td>
                   </tr>
                   <tr className="border-b border-border/30">
                     <td className="py-4 pr-8 text-foreground font-medium align-top whitespace-nowrap">Dimanche</td>
-                    <td className="py-4 text-muted-foreground text-sm align-top"></td>
+                    <td className="py-4 text-muted-foreground text-sm align-top">
+                      <p>16h00 : cocktail de bienvenue</p>
+                      <p>18h00 : cérémonie</p>
+                      <p>19h30 : réception et repas</p>
+                    </td>
                   </tr>
                   <tr>
                     <td className="py-4 pr-8 text-foreground font-medium align-top whitespace-nowrap">Lundi</td>
-                    <td className="py-4 text-muted-foreground text-sm align-top"></td>
+                    <td className="py-4 text-muted-foreground text-sm align-top">Brunch sur place et départ.</td>
                   </tr>
                 </tbody>
               </table>
