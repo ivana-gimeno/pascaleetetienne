@@ -1,6 +1,7 @@
 import couplePhoto1 from "@/assets/couple-photo-1.jpeg";
 import couplePhoto2 from "@/assets/couple-photo-2.jpeg";
 import couplePhoto3 from "@/assets/couple-photo-3.jpeg";
+import familyPhoto from "@/assets/pasc-and-fam.png";
 
 interface StoryChapterProps {
   name: string;
