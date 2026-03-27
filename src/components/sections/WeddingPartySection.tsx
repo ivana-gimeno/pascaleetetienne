@@ -1,4 +1,5 @@
 import thomasImg from "@/assets/thomas.jpeg";
+import felixImg from "@/assets/felix.jpeg";
 
 interface PartyMemberProps {
   name: string;
@@ -65,6 +66,7 @@ export const WeddingPartySection = () => {
       role: "Témoin du marié",
       description: "Ami depuis la garderie chez Violaine, Félix est l'originalité pure. Capable de dominer le calcul différentiel au Cégep tout en filant dans les corridors sur des souliers à roulettes. Entre nos virées en tandem 1977 et nos partys aux quatre coins du Québec, il a passé 30 ans à refaire le monde avec moi. L'ingéniosité incarnée pour mon grand jour.",
       align: "right" as const,
+      image: felixImg,
     },
   ];
 
