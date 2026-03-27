@@ -17,7 +17,7 @@ const PartyMember = ({ name, role, description, align }: PartyMemberProps) => {
   );
 
   const textBlock = (
-    <div className={`flex-1 flex items-center ${align === "right" ? "md:text-right" : "md:text-left"} text-center md:text-inherit`}>
+    <div className={`flex-1 flex items-start ${align === "right" ? "md:text-right" : "md:text-left"} text-center md:text-inherit`}>
       <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
         {description}
       </p>
