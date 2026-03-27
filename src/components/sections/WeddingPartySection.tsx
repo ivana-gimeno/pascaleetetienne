@@ -1,15 +1,22 @@
+import thomasImg from "@/assets/thomas.jpeg";
+
 interface PartyMemberProps {
   name: string;
   role: string;
   description: string;
   align: "left" | "right";
+  image?: string;
 }
 
-const PartyMember = ({ name, role, description, align }: PartyMemberProps) => {
+const PartyMember = ({ name, role, description, align, image }: PartyMemberProps) => {
   const photoBlock = (
     <div className="flex flex-col items-center shrink-0">
-      <div className="aspect-square bg-muted/50 border-2 border-dashed border-border rounded-full w-32 h-32 md:w-40 md:h-40 flex items-center justify-center">
-        <p className="text-muted-foreground text-xs">Photo</p>
+      <div className="aspect-square rounded-full w-32 h-32 md:w-40 md:h-40 flex items-center justify-center overflow-hidden bg-muted/50 border-2 border-dashed border-border">
+        {image ? (
+          <img src={image} alt={name} className="w-full h-full object-cover" />
+        ) : (
+          <p className="text-muted-foreground text-xs">Photo</p>
+        )}
       </div>
       <h3 className="font-serif text-xl text-foreground mt-3 mb-1">{name}</h3>
       <p className="text-primary text-sm tracking-wide">{role}</p>
@@ -51,6 +58,7 @@ export const WeddingPartySection = () => {
       role: "Témoin du marié",
       description: "Qu'il chasse les champignons en forêt, qu'il rêve de Porsche ou d'immobilier, Thomas ne fait rien à moitié. De nos batailles de neige en 3e année aux jeudis au Toys \"R\" Us, jusqu'à nos expéditions en Colombie et sur la Mistassini, c'est le compagnon de route ultime. Épicurien et as de l'organisation, c'est le \"chum\" sur qui on peut toujours compter pour les meilleurs plans. Un pilier indispensable de ce mariage.",
       align: "right" as const,
+      image: thomasImg,
     },
     {
       name: "Félix",
