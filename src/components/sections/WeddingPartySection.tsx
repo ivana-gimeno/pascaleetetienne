@@ -90,6 +90,7 @@ export const WeddingPartySection = () => {
               role={member.role}
               description={member.description}
               align={member.align}
+              image={member.image}
             />
           ))}
         </div>
