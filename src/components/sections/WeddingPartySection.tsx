@@ -1,8 +1,11 @@
+import thomasImg from "@/assets/thomas.jpeg";
+
 interface PartyMemberProps {
   name: string;
   role: string;
   description: string;
   align: "left" | "right";
+  image?: string;
 }
 
 const PartyMember = ({ name, role, description, align }: PartyMemberProps) => {
