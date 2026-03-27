@@ -32,7 +32,7 @@ export const WeddingPartySection = () => {
     {
       name: "Thomas",
       role: "Témoin du marié",
-      description: "[Description courte de la personne et de votre relation]"
+      description: "Qu'il chasse les champignons en forêt, qu'il rêve de Porsche ou d'immobilier, Thomas ne fait rien à moitié. De nos batailles de neige en 3e année aux jeudis au Toys \"R\" Us, jusqu'à nos expéditions en Colombie et sur la Mistassini, c'est le compagnon de route ultime. Épicurien et as de l’organisation, c’est le \"chum\" sur qui on peut toujours compter pour les meilleurs plans. Un pilier indispensable de ce mariage."
     },
     {
       name: "Félix",
