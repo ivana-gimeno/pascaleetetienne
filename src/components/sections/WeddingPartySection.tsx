@@ -25,7 +25,7 @@ const PartyMember = ({ name, role, description, align }: PartyMemberProps) => {
   );
 
   return (
-    <div className={`flex flex-col md:flex-row items-center gap-6 md:gap-10 ${align === "right" ? "md:flex-row-reverse" : ""}`}>
+    <div className={`flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10 ${align === "right" ? "md:flex-row-reverse" : ""}`}>
       {photoBlock}
       {textBlock}
     </div>
