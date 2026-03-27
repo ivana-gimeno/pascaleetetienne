@@ -12,7 +12,7 @@ interface PartyMemberProps {
 const PartyMember = ({ name, role, description, align, image }: PartyMemberProps) => {
   const photoBlock = (
     <div className="flex flex-col items-center shrink-0">
-      <div className="aspect-square rounded-full w-32 h-32 md:w-40 md:h-40 flex items-center justify-center overflow-hidden bg-muted/50 border-2 border-dashed border-border">
+      <div className="aspect-square rounded-full w-32 h-32 md:w-40 md:h-40 flex items-center justify-center overflow-hidden bg-muted/50">
         {image ? (
           <img src={image} alt={name} className="w-full h-full object-cover" />
         ) : (
