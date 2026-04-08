@@ -1,6 +1,7 @@
 import taniaImg from "@/assets/tania.jpeg";
 import thomasImg from "@/assets/thomas.jpeg";
 import felixImg from "@/assets/felix.jpeg";
+import ivanaImg from "@/assets/ivana.jpeg";
 
 interface PartyMemberProps {
   name: string;
@@ -55,6 +56,7 @@ export const WeddingPartySection = () => {
       role: "Témoin de la mariée",
       description: "Ivi, la force tranquille, mon amie techno, celle avec qui il ne suffit qu’un regard afin de comprendre ce que l’autre ressent. C’est avec elle dont je peux: rire de sa gamme de couleur vestimentaire, discuter voyage de 24h en Irlande, s’exciter avec le classement de nos épices et partager notre amour pour mon 2e mari (désolée Etienne) Bad Bunny. Celle qui est dévouée à aller m’acheter des tops parce que ça me le dit pas, je sais qu’elle est toujours à un seul coup de fil de venir à mon secours ou à créer un code QR pour notre mariage. ",
       align: "left" as const,
+      image: ivanaImg,
     },
     {
       name: "Thomas",
