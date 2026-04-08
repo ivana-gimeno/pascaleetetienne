@@ -7,22 +7,74 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useToast } from "@/hooks/use-toast";
 import { EucalyptusDecor } from "@/components/EucalyptusDecor";
 
+// ── Configuration ──────────────────────────────────────────────
+// 1. Deploy your Google Apps Script web app (see setup instructions)
+// 2. Paste the URL below
+const GOOGLE_SCRIPT_URL = "";
+// Shared secret – must match the one in your Apps Script
+const FORM_SECRET = "ppeg-rsvp-2026";
+// ───────────────────────────────────────────────────────────────
+
+const INITIAL_FORM = {
+  name: "",
+  email: "",
+  attendance: "",
+  meal: "",
+  allergies: "",
+};
+
 export const RSVPSection = () => {
   const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    attendance: "",
-    meal: "",
-    allergies: "",
-  });
+  const [formData, setFormData] = useState(INITIAL_FORM);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Merci!",
-      description: "Votre réponse a été enregistrée.",
-    });
+
+    if (!GOOGLE_SCRIPT_URL) {
+      toast({
+        title: "Erreur de configuration",
+        description: "L'URL du formulaire n'est pas encore configurée.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          token: FORM_SECRET,
+          timestamp: new Date().toISOString(),
+          name: formData.name,
+          email: formData.email,
+          attendance: formData.attendance,
+          meal: formData.meal,
+          allergies: formData.allergies,
+        }),
+      });
+
+      // no-cors returns opaque response, so we assume success
+      setSubmitted(true);
+      setFormData(INITIAL_FORM);
+      toast({
+        title: "Merci!",
+        description: "Votre réponse a été enregistrée.",
+      });
+    } catch {
+      toast({
+        title: "Erreur",
+        description: "Impossible d'envoyer votre réponse. Veuillez réessayer.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -30,6 +82,24 @@ export const RSVPSection = () => {
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  if (submitted) {
+    return (
+      <section id="rsvp" className="py-24 bg-secondary/30 relative overflow-hidden">
+        <EucalyptusDecor position="top-left" variant={2} size="lg" rotate={-20} className="opacity-25" />
+        <EucalyptusDecor position="bottom-right" variant={1} size="lg" flip rotate={15} className="opacity-25" />
+        <div className="container mx-auto px-6 relative z-10 text-center">
+          <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Merci!</h2>
+          <p className="text-muted-foreground max-w-lg mx-auto mb-8">
+            Votre réponse a bien été enregistrée. Au plaisir de vous voir!
+          </p>
+          <Button variant="outline" onClick={() => setSubmitted(false)}>
+            Modifier ma réponse
+          </Button>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="rsvp" className="py-24 bg-secondary/30 relative overflow-hidden">
@@ -148,8 +218,8 @@ export const RSVPSection = () => {
               </>
             )}
 
-            <Button type="submit" className="w-full" size="lg">
-              Envoyer ma réponse
+            <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
+              {isSubmitting ? "Envoi en cours..." : "Envoyer ma réponse"}
             </Button>
 
             <p className="text-xs text-center text-muted-foreground">
