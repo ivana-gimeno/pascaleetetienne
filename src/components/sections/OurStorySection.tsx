@@ -6,6 +6,7 @@ import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.png";
+import gallery5 from "@/assets/gallery-5.jpg";
 
 interface StoryChapterProps {
   name: string;
@@ -32,7 +33,7 @@ const couplePhotos = [
   { src: gallery2, alt: "Pascale et Étienne - photo 2" },
   { src: gallery3, alt: "Pascale et Étienne - photo 3" },
   { src: gallery4, alt: "Pascale et Étienne - photo 4" },
-  { src: couplePhoto1, alt: "Pascale et Étienne - photo 5" },
+  { src: gallery5, alt: "Pascale et Étienne - photo 5" },
   { src: couplePhoto2, alt: "Pascale et Étienne - photo 6" },
   { src: couplePhoto3, alt: "Pascale et Étienne - photo 7" },
   { src: couplePhoto1, alt: "Pascale et Étienne - photo 8" },
