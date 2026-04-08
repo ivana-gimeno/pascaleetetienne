@@ -10,7 +10,7 @@ import { EucalyptusDecor } from "@/components/EucalyptusDecor";
 // ── Configuration ──────────────────────────────────────────────
 // 1. Deploy your Google Apps Script web app (see setup instructions)
 // 2. Paste the URL below
-const GOOGLE_SCRIPT_URL = "";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzuzF9KVvHnkvuB3h89uT83pDAC9KnSiDdP6dDduoHk4LM_hlHByiwh8AZptpbO4qpgKw/exec";
 // Shared secret – must match the one in your Apps Script
 const FORM_SECRET = "ppeg-rsvp-2026";
 // ───────────────────────────────────────────────────────────────
