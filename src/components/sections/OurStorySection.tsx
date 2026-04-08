@@ -24,9 +24,14 @@ const StorySectionGroup = ({ title, children }: { title: string; children: React
 );
 
 const couplePhotos = [
-  { src: couplePhoto1, alt: "Pascale et Étienne en Suisse" },
-  { src: couplePhoto2, alt: "Pascale et Étienne en randonnée" },
-  { src: couplePhoto3, alt: "Pascale et Étienne à la plage" },
+  { src: couplePhoto1, alt: "Pascale et Étienne - photo 1" },
+  { src: couplePhoto2, alt: "Pascale et Étienne - photo 2" },
+  { src: couplePhoto3, alt: "Pascale et Étienne - photo 3" },
+  { src: couplePhoto1, alt: "Pascale et Étienne - photo 4" },
+  { src: couplePhoto2, alt: "Pascale et Étienne - photo 5" },
+  { src: couplePhoto3, alt: "Pascale et Étienne - photo 6" },
+  { src: couplePhoto1, alt: "Pascale et Étienne - photo 7" },
+  { src: couplePhoto2, alt: "Pascale et Étienne - photo 8" },
 ];
 
 export const OurStorySection = () => {
@@ -88,7 +93,7 @@ export const OurStorySection = () => {
           <h3 className="font-serif text-xl text-center text-foreground mb-8">
             Quelques moments ensemble
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-5xl mx-auto">
             {couplePhotos.map((photo, i) => (
               <img
                 key={i}
