@@ -1,3 +1,4 @@
+import taniaImg from "@/assets/tania.jpeg";
 import thomasImg from "@/assets/thomas.jpeg";
 import felixImg from "@/assets/felix.jpeg";
 
