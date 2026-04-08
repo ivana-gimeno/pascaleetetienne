@@ -48,6 +48,7 @@ export const WeddingPartySection = () => {
       role: "Témoin de la mariée",
       description: "Tane, la fille que j’ai rencontré il y a 16 ans, un soir de party chez mes parents, à rapidement changé son statut +1 à « us against the world ». Mon téléphone serait gêné de montrer les printscreens indécents, notre amour pour l’aneth, les reels d’Excel, nos achats compulsifs de Noel, nos recettes d’Instagram et nos références à Friends que nous avons fait. Moi qui gère son anxiété, et elle qui gère ma vie, nous sommes devenues un beau mélange unifié toujours prêtes à accueillir l’une ou l’autre avec du mousseux dans une main et du ubereats dans l’autre. Si vous avez des questions, n’hésitez pas à lui parler, car elle a opéré cet événement avec, un peu, notre aide.",
       align: "left" as const,
+      image: taniaImg,
     },
     {
       name: "Ivana",
