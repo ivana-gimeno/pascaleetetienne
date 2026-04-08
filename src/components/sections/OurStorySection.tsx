@@ -2,6 +2,10 @@ import couplePhoto1 from "@/assets/couple-photo-1.jpeg";
 import couplePhoto2 from "@/assets/couple-photo-2.jpeg";
 import couplePhoto3 from "@/assets/couple-photo-3.jpeg";
 import familyPhoto from "@/assets/pasc-and-fam.png";
+import gallery1 from "@/assets/gallery-1.jpg";
+import gallery2 from "@/assets/gallery-2.jpg";
+import gallery3 from "@/assets/gallery-3.jpg";
+import gallery4 from "@/assets/gallery-4.png";
 
 interface StoryChapterProps {
   name: string;
@@ -24,14 +28,14 @@ const StorySectionGroup = ({ title, children }: { title: string; children: React
 );
 
 const couplePhotos = [
-  { src: couplePhoto1, alt: "Pascale et Étienne - photo 1" },
-  { src: couplePhoto2, alt: "Pascale et Étienne - photo 2" },
-  { src: couplePhoto3, alt: "Pascale et Étienne - photo 3" },
-  { src: couplePhoto1, alt: "Pascale et Étienne - photo 4" },
-  { src: couplePhoto2, alt: "Pascale et Étienne - photo 5" },
-  { src: couplePhoto3, alt: "Pascale et Étienne - photo 6" },
-  { src: couplePhoto1, alt: "Pascale et Étienne - photo 7" },
-  { src: couplePhoto2, alt: "Pascale et Étienne - photo 8" },
+  { src: gallery1, alt: "Pascale et Étienne - photo 1" },
+  { src: gallery2, alt: "Pascale et Étienne - photo 2" },
+  { src: gallery3, alt: "Pascale et Étienne - photo 3" },
+  { src: gallery4, alt: "Pascale et Étienne - photo 4" },
+  { src: couplePhoto1, alt: "Pascale et Étienne - photo 5" },
+  { src: couplePhoto2, alt: "Pascale et Étienne - photo 6" },
+  { src: couplePhoto3, alt: "Pascale et Étienne - photo 7" },
+  { src: couplePhoto1, alt: "Pascale et Étienne - photo 8" },
 ];
 
 export const OurStorySection = () => {
