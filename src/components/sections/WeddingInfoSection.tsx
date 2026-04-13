@@ -21,7 +21,7 @@ const InfoCard = ({
   )}
   </div>;
 export const WeddingInfoSection = () => {
-  return <section className="py-24 bg-secondary/30">
+  return <section id="mariage" className="py-24 bg-secondary/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">

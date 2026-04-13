@@ -1,6 +1,6 @@
 import { EucalyptusDecor } from "@/components/EucalyptusDecor";
 export const HeroSection = () => {
-  return <section id="mariage" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Subtle eucalyptus decorations */}
       <EucalyptusDecor position="top-left" variant={1} size="lg" rotate={-15} className="opacity-40" />
       <EucalyptusDecor position="top-right" variant={2} size="md" flip rotate={20} className="opacity-40" />
