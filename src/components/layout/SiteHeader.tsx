@@ -15,8 +15,8 @@ const navItems = [{
   label: "Wedding Party",
   href: "#wedding-party"
 }, {
-  label: "Q & A",
-  href: "#qa"
+  label: "FAQ",
+  href: "#faq"
 }, {
   label: "RSVP",
   href: "#rsvp",
