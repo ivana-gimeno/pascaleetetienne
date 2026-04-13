@@ -5,7 +5,7 @@ const navItems = [
   { label: "Mariage", href: "#mariage" },
   { label: "Hébergement", href: "#hebergement" },
   { label: "Notre Histoire", href: "#histoire" },
-  { label: "Liste de Mariage", href: "#liste" },
+  { label: "FAQ", href: "#faq" },
   { label: "RSVP", href: "#rsvp" },
 ];
 
