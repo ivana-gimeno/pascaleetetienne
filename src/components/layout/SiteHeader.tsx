@@ -27,7 +27,10 @@ export const SiteHeader = () => {
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({
+      const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - headerHeight,
         behavior: "smooth"
       });
     }
