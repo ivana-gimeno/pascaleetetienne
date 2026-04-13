@@ -14,7 +14,7 @@ const faqItems = [
   {
     question: "Y a-t-il un code vestimentaire?",
     answer:
-      "Nous vous demandons une tenue formelle dans des tons neutres (noir, beige, gris, marine, brun, etc.). Le blanc est réservé à la mariée! N'oubliez pas vos chaussures confortables pour danser!",
+      "Nous vous demandons une tenue formelle dans des tons neutres (noir, beige, gris, marine, brun, etc.). Le blanc est réservé à la mariée! Prévoyez des chaussures adaptées à la pelouse et au sable, et n'oubliez pas vos chaussures confortables pour danser!",
   },
   {
     question: "Puis-je prendre des photos pendant la cérémonie?",
