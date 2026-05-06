@@ -112,7 +112,9 @@ export const RSVPSection = () => {
             RSVP
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto text-sm">
-            Confirmez votre présence avant le 31 mai 2026<br />
+            Confirmez votre présence avant le 31 mai 2026
+          </p>
+          <p className="text-muted-foreground max-w-lg mx-auto text-sm mt-2">
             Si vous répondez après cette date, apportez-vous une chaise et un sandwich!
           </p>
         </div>
