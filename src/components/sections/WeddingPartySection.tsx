@@ -81,7 +81,7 @@ export const WeddingPartySection = () => {
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
             Wedding Party
           </h2>
-          <p className="text-muted-foreground max-w-lg mx-auto text-sm">
+          <p className="text-muted-foreground max-w-lg mx-auto text-xs font-light">
             Les personnes spéciales qui nous accompagnent dans cette aventure
           </p>
         </div>
