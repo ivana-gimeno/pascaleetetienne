@@ -50,7 +50,7 @@ export const OurStorySection = () => {
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
             Notre Histoire
           </h2>
-          <p className="text-muted-foreground max-w-lg mx-auto">
+          <p className="text-muted-foreground max-w-lg mx-auto text-sm">
             Le chemin qui nous a menés jusqu'ici
           </p>
         </div>
