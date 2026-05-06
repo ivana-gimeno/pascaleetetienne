@@ -111,10 +111,10 @@ export const RSVPSection = () => {
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
             RSVP
           </h2>
-          <p className="text-muted-foreground max-w-lg mx-auto text-sm">
+          <p className="text-muted-foreground max-w-lg mx-auto text-base">
             Confirmez votre présence avant le 31 mai 2026
           </p>
-          <p className="text-muted-foreground max-w-lg mx-auto text-sm mt-2">
+          <p className="text-muted-foreground max-w-lg mx-auto mt-2 text-xs">
             Si vous répondez après cette date, apportez-vous une chaise et un sandwich!
           </p>
         </div>
