@@ -8,7 +8,7 @@ export const AccommodationSection = () => {
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
             Hébergement
           </h2>
-          <p className="text-muted-foreground max-w-lg mx-auto text-xs font-light">
+          <p className="text-muted-foreground max-w-lg mx-auto text-sm">
             Nous avons réservé un bloc de chambres pour vous faciliter la vie
           </p>
         </div>
