@@ -7,7 +7,7 @@ export const RegistrySection = () => {
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
             Liste de Mariage
           </h2>
-          <p className="text-muted-foreground max-w-lg mx-auto">
+          <p className="text-muted-foreground max-w-lg mx-auto text-sm">
             Votre présence est le plus beau des cadeaux
           </p>
         </div>
