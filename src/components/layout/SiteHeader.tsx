@@ -17,10 +17,6 @@ const navItems = [{
 }, {
   label: "FAQ",
   href: "#faq"
-}, {
-  label: "RSVP",
-  href: "#rsvp",
-  accent: true
 }];
 export const SiteHeader = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
