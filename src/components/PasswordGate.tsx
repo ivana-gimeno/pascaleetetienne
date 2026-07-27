@@ -9,7 +9,7 @@ interface PasswordGateProps {
   onSuccess: () => void;
 }
 
-const CORRECT_PASSWORD = "ppeg2026";
+const CORRECT_PASSWORD = "06092026";
 
 export const PasswordGate = ({ onSuccess }: PasswordGateProps) => {
   const [password, setPassword] = useState("");
