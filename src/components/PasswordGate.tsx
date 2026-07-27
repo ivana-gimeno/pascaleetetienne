@@ -95,7 +95,7 @@ export const PasswordGate = ({ onSuccess }: PasswordGateProps) => {
         </form>
 
         <p className="text-center text-xs text-muted-foreground/60 mt-6">
-          Le mot de passe se trouve sur votre invitation
+          Indice: date du mariage format JJMMAAAA
         </p>
       </div>
 
